@@ -12,8 +12,8 @@ main{
 }
 
 .clock{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background-color: rgba(255, 255, 255, 0.438);
     box-shadow: 0 0 10px 1px rgba(126, 126, 126, 0.452);
     position: relative;
@@ -60,4 +60,36 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.arrows::before{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10; 
+    box-shadow: 0 0 5px 3px #2f2f2f4d;
+}
+
+.arrows span{
+    position: absolute;
+    bottom: 50%;
+    width: 0.5rem;
+    height: 8.5rem;
+    border-radius: 50% 50% 0 0;
+    background-color: #fff;
+    transform-origin: bottom;
+
+}
+.arrows .hour{
+    height: 8rem;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+
+.arrows .second{
+    height: 10rem;
+    width: 0.3rem;
+    background-color: red;
+    transform: rotate(45deg);
 }
