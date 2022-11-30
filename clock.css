@@ -8,15 +8,16 @@ main{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background: linear-gradient(#40e0d0, #ff8c00, #ff0080);;
 }
 
 .clock{
     width: 400px;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.438);
-    box-shadow: 0 0 10px 1px rgba(126, 126, 126, 0.452);
+    box-shadow:  0 0 20px 8px rgb(0 0 0 / 65%);;
     position: relative;
+    border-radius: 50%;
 }
 
 
@@ -24,6 +25,9 @@ main{
     width: inherit;
     height: inherit;
     position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
 }
 
 .twelve{
@@ -78,18 +82,18 @@ main{
     height: 8.5rem;
     border-radius: 50% 50% 0 0;
     background-color: #fff;
-    transform-origin: bottom;
+    transform-origin: bottom center;
 
 }
 .arrows .hour{
     height: 8rem;
-    background-color: #000;
-    transform: rotate(90deg);
+    background-color: #2196f3;
+    
 }
 
 .arrows .second{
     height: 10rem;
     width: 0.3rem;
-    background-color: red;
-    transform: rotate(45deg);
+    background-color: #6563c2;
+    
 }
